@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VAR - Flamengo</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #167d9a;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* ATIVIDADES */
+
+        .atividade {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #00a8cc;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .atividade h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* PROJETO */
+
+        .projeto {
+            background: linear-gradient(135deg, #16222a, #3a6073);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00a8cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #007d99;
+        }
+
+        /* REFLEXÃO */
+
+        .reflexao {
+            background-color: #e7f8fc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .reflexao p {
+            font-size: 19px;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>🚀 FILINHOS DO FLAMENGO </h1>
+
+        <p>brasileirão</p>
+
+        <p>
+            OS PIORES TIMES
+        </p>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="https://www.google.com/search?q=times+que+o+flamengo+ganhou+em+2026+todos+brasileir%C3%A3o&sca_esv=4ef347e5cd8f3683&biw=1920&bih=917&ei=aPazavWfCfrd5OUP2euL2A4&oq=times+que+o+flamengo+ganhou+em+2026+todos+brasilei&gs_lp=Egxnd3Mtd2l6LXNlcnAiMnRpbWVzIHF1ZSBvIGZsYW1lbmdvIGdhbmhvdSBlbSAyMDI2IHRvZG9zIGJyYXNpbGVpKgUIAhifBTIFECEYnwUyBRAhGJ8FMgUQIRifBUj9SlC2CVjcNXABeAGQAQCYAZgCoAGhEaoBBjAuMTQuMbgBAcgBAPgBAZgCEKACjBLCAgoQABhHGNYEGLADwgIOEAAY5AIY1gQYsAPYAQHCAhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBAcICBhAAGBYYHsICBRAAGO8FwgIIEAAYgAQYogTCAggQABiJBRiiBMICBRAhGKABmAMAiAYBkAYNugYGCAEQARgJkgcGMS4xNC4xoAe7NLIHBjAuMTQuMbgH_hHCBwcyLjcuNS4yyAczgAgB&sclient=gws-wiz-serp#:~:text=Esporte%20Clube%20Vit%C3%B3ria,%C2%A0%2B3>Início</a>
+
+        <a href="#tecnologias">Tecnologias</a>
+
+        <a href="#inovacao">Inovação</a>
+
+        <a href="#atividades">Atividades</a>
+
+        <a href="#projeto">Projeto</a>
+
+    </nav>
+
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="inicio">
+
+            <img
+                src="1300628412.webp"
+                alt="FLAMENGO"
+            >
+
+            <div class="inicio-texto">
+
+                <h2>💡 Bem-vindos!</h2>
+
+                <p>
+                    flamengo timeco
+                    <strong>Varmengo</strong> do
+                    <strong>So ganha se o juiz ajudar</strong>.
+                </p>
+
+                <br>
+
+                <p>
+                    vamos comhecer um pouco a historia do flamengo timeco
+                </p>
+
+                <br>
+
+                <p>
+                    🔎 VAR + 💡 JUIZ + 🛠️ Timeco
+                </p>
+
+                <br>
+
+                <p>
+            o pior do brasil
+                    
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIAS -->
+
+    <section id="tecnologias">
+
+        <h2>🌐 VARmengo no Cotidiano</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <img
+                    src="1300628412.webp"
+                    alt="Inteligência Artificial"
+                >
+
+                <h3>🤖 VARmengo</h3>
+
+                <p>
+                    nosso elenco é top
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="1300628412.webp"
+                    alt="Robótica"
+                >
+
+                <h3>🦾 Elenco</h3>
+
+                <p>
+                    tudo perneta, so ganhamos se o VAR ajudar
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="1300628412.webp"
+                    alt="Internet das Coisas"
+                >
+
+                <h3>🌐 Estrutura</h3>
+
+                <p>
+        Ninho do Urubu - Ta pegando fogo Bicho....
+            
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="1300628412.webp"
+                    alt="Realidade Virtual"
+                >
+
+                <h3>Maracanã</h3>
+
+                <p>
+                    Maior Estádio do Brasil
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INOVAÇÃO -->
+
+    <section id="inovacao">
+
+        <h2>Conhecendo a Nação</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>🔎 como participar </h3>
+
+                <p>
+                    acese o site da naçãp rubro negra 
+                
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>💡 ingresssos</h3>
+
+                <p>
+                    sento sócio vc tem direito a entrada free a todos os jogos.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Fotos</h3>
+
+                <p>
+                    acesse o site da nação rubro negra
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🌎 Compartilhar</h3>
+
+                <p>
+                    divulge nas suas redes sociais 
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIA E SOCIEDADE -->
+
+    <section>
+
+        <div class="reflexao">
+
+            <h2>🌎 títulos </h2>
+
+            <p>
+                 ele é o segundo time que mais tem títulos do brasil 
+            </p>
+
+            <br>
+
+
+            <br>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATIVIDADES -->
+
+    <section id="atividades">
+
+        <h2>📝 libertadores </h2>
+
+
+        <div class="atividade">
+
+            <h3>campeão em 2025</h3>
+
+             </div>
+
+    </section>
+
+
+    <!-- PROJETO FINAL -->
+
+    <section id="projeto">
+
+        <div class="projeto">
+
+            <h2>🚀 FLAMENGO</h2>
+
+                        <a href="#inicio" class="botao">
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            🚀 Flamengo - Inovação Tecnológica – 1º Ano do Ensino Médio
+        </p>
+
+        <p>
+            Criar. Experimentar. Inovar. Transformar.
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 - Projeto Educacional
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
